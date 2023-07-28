@@ -39,7 +39,7 @@ def sonarChecks(){
            echo Sonar Checks In Progress
            sonar-scanner -Dsonar.host.url=http://54.205.223.197:9000  ${ARGS} -Dsonar.projectKey=${COMPONENT}  -Dsonar.login=admin -Dsonar.password=password
            curl https://gitlab.com/thecloudcareers/opensource/-/raw/master/lab-tools/sonar-scanner/quality-gate > sonar-quality-gate.sh
-           bash -x sonar-quality-gate.sh admin ${SONARCRED_PSW} ${SONARURL} ${COMPONENT}  
+           bash -x sonar-quality-gate.sh admin ${SONARCRED_PSW} ${54.205.223.197} ${COMPONENT}  
            echo Sonar Checks Completed
         '''        
         }
