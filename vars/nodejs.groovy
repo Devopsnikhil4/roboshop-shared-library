@@ -1,18 +1,3 @@
-def call() {
-    node {
-        git branch: 'main', url: "https://github.com/Devopsnikhil4/${COMPONENT}.git"
-        env.APP_TYPE="nodejs"
-        common.lintChecks()
-        env.ARGS="-Dsonar.sources=."              
-        common.sonarChecks()
-        common.testCases()
-        if(env.TAG_NAME != null) {
-            common.artifacts()
-        }
-    }
-}
-
-
 def call(COMPONENT) {
     pipeline {
         agent {  label 'WS' }
