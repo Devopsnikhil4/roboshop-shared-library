@@ -12,15 +12,15 @@ def call() {
     }
 }
 
-/*    Uncommen this to use the declarative approach
+
 def call(COMPONENT) {
     pipeline {
         agent {  label 'WS' }
         environment {
             SONARCRED = credentials('SONARCRED') 
             NEXUS = credentials('NEXUS') 
-            SONARURL  = "172.31.86.248"
-            NEXUSURL  = "172.31.92.189"
+            SONARURL  = "54.205.223.197"
+            NEXUSURL  = "107.20.6.151"
         }
         stages {      
 
