@@ -1,6 +1,6 @@
 def call() {
     node {
-        git branch: 'main', url: "https://github.com/Devopsnikhil4/${COMPONENT}.git"
+        git branch: 'main', url: 'https://github.com/Devopsnikhil4/cart.git'
         env.APP_TYPE="nodejs"
         common.lintChecks()
         env.ARGS="-Dsonar.sources=."              
