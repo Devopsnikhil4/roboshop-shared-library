@@ -12,7 +12,7 @@ def call() {
     }
 }
 
-
+/*    Uncommen this to use the declarative approach
 def call(COMPONENT) {
     pipeline {
         agent {  label 'WS' }
