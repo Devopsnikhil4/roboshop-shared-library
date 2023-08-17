@@ -7,7 +7,7 @@ def call() {
         ])
     node {
         ansiColor('xterm') {
-            git branch: 'main', url: "https://github.com/b54-clouddevops/${REPONAME}.git"
+            git branch: 'main', url: "https://github.com/Devopsnikhil4/${REPONAME}.git"
             
             stage('terraform init') {
                 // sh "cd ${TFDIR}"
