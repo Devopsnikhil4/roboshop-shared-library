@@ -20,7 +20,7 @@ def call(COMPONENT) {
             SONARCRED = credentials('SONARCRED') 
             NEXUS = credentials('NEXUS') 
             SONARURL  = "54.205.223.197"
-            NEXUSURL  = "107.20.6.151"
+            NEXUSURL  = "54.205.17.173"
         }
         stages {      
 
